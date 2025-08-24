@@ -69,6 +69,7 @@
      {"rule_set": ["geosite-telegram", "geoip-telegram"], "outbound": "📲 Telegram"},
      {"rule_set": "geosite-tiktok", "outbound": "🎵 TikTok"},
      {"rule_set": ["geosite-apple", "geoip-apple"], "outbound": "🍏 Apple"},
+     {"rule_set": "geosite-bing", "outbound": "🚀 节点选择"},
      {"rule_set": "geosite-microsoft", "outbound": "🪟 Microsoft"},
      {"rule_set": "geosite-gfw", "outbound": "🚀 节点选择"},
      {"rule_set": "geosite-geolocation-!cn", "outbound": "🚀 节点选择"},
@@ -92,6 +93,7 @@
       { "tag": "geosite-gfw", "type": "remote", "format": "binary", "url": "https://gh-proxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/gfw.srs", "download_detour": "➡️ 直连" },
       { "tag": "geosite-category-httpdns-cn", "type": "remote", "format": "binary", "url": "https://gh-proxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/category-httpdns-cn.srs", "download_detour": "➡️ 直连" },
       { "tag": "geosite-category-ads-all", "type": "remote", "format": "binary", "url": "https://gh-proxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/category-ads-all.srs", "download_detour": "➡️ 直连" },
+      { "tag": "geosite-bing", "type": "remote", "format": "binary", "url": "https://gh-proxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/bing.srs", "download_detour": "➡️ 直连" },
 
       { "tag": "geoip-google", "type": "remote", "format": "binary", "url": "https://gh-proxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geoip/google.srs", "download_detour": "➡️ 直连" },
       { "tag": "geoip-telegram", "type": "remote", "format": "binary", "url": "https://gh-proxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geoip/telegram.srs", "download_detour": "➡️ 直连" },      
