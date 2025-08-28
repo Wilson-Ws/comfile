@@ -17,6 +17,7 @@ AND, ((DOMAIN-KEYWORD, -ttam-), (DOMAIN-SUFFIX, ibyteimg.com)), REJECT
 AND, ((DOMAIN-KEYWORD, ssdk-), (DOMAIN-SUFFIX, pangle.io)), REJECT
 AND, ((DOMAIN-KEYWORD, pangolin), (DOMAIN-SUFFIX, sgsnssdk.com)), REJECT
 AND, ((DOMAIN-KEYWORD, read), (DOMAIN-KEYWORD, static)), REJECT
+AND, ((DOMAIN-KEYWORD, game), (DOMAIN-KEYWORD, zijieapi.com)), REJECT
 AND, ((DOMAIN-KEYWORD, pull), (DOMAIN-KEYWORD, douyincdn.com)), REJECT
 AND, ((DOMAIN-KEYWORD, tts), (DOMAIN-KEYWORD, fqnovelvod)), REJECT
 AND, ((DOMAIN-KEYWORD, novel), (DOMAIN-KEYWORD, fqnovelvod)), REJECT
@@ -37,6 +38,7 @@ AND, ((DOMAIN-KEYWORD, api), (DOMAIN-KEYWORD, -dual-event-), (DOMAIN-SUFFIX, pan
 AND, ((DOMAIN-KEYWORD, api), (DOMAIN-KEYWORD, pangolin), (DOMAIN-SUFFIX, sgsnssdk.com)), REJECT
 AND, ((DOMAIN-KEYWORD, ads), (DOMAIN-KEYWORD, -normal-lq), (DOMAIN-SUFFIX, zijieapi.com)), REJECT
 URL-REGEX, "^http:\/\/p\d+-be-pack-sign\.pglstatp-toutiao\.com\/(ad-app-package|web\.business\.image)\/", REJECT
+DOMAIN, dig.bdurl.net, REJECT
 DOMAIN, mon.zijieapi.com, REJECT
 DOMAIN, lf-ad-ies.bytecdn.cn, REJECT
 DOMAIN, i.snssdk.com, REJECT
