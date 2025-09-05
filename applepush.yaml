@@ -1,0 +1,3 @@
+payload:
+    - DOMAIN-SUFFIX,push.apple.com
+    - DOMAIN-SUFFIX,identity.apple.com
