@@ -29,5 +29,7 @@ DOMAIN-SUFFIX,trae.ai
 DOMAIN-SUFFIX,ttwebview.com
 DOMAIN-KEYWORD,musical.ly
 DOMAIN-KEYWORD,tiktok
-DOMAIN-SUFFIX,ans1.singapore3.level3.net
+DOMAIN-SUFFIX,singapore3.level3.net
+DOMAIN-SUFFIX,rdns3.eurovoice.net
 IP-CIDR,192.221.176.16/32
+IP-CIDR,45.32.115.55/32
