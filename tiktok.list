@@ -30,5 +30,5 @@ DOMAIN-SUFFIX,ttwebview.com
 DOMAIN-KEYWORD,musical.ly
 DOMAIN-KEYWORD,tiktok
 DOMAIN-SUFFIX,unfiltered.adguard-dns.com
-IP-CIDR,94.140.14.140/32
-IP-CIDR,94.140.14.141/32
+IP-CIDR,94.140.14.140/32,no-resolve
+IP-CIDR,94.140.14.141/32,no-resolve
