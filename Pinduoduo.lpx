@@ -26,11 +26,11 @@ DOMAIN, titan.pinduoduo.com, REJECT
 # DOMAIN, apm-a.pinduoduo.com, REJECT
 # DOMAIN, apm.pinduoduo.com, REJECT
 # DOMAIN, m.pinduoduo.net, REJECT
-DOMAIN, ta-a.pinduoduo.com, REJECT
+# DOMAIN, ta-a.pinduoduo.com, REJECT
 # DOMAIN, ta.pinduoduo.com, REJECT
 # DOMAIN, th-a.pinduoduo.com, REJECT
-DOMAIN, th-b.pinduoduo.com, REJECT
-DOMAIN, th.pinduoduo.com, REJECT
+# DOMAIN, th-b.pinduoduo.com, REJECT
+# DOMAIN, th.pinduoduo.com, REJECT
 DOMAIN, sdk.1rtb.net, REJECT
 IP-CIDR, 183.194.214.21/32, REJECT
 IP-CIDR, 49.235.102.190/32, REJECT
