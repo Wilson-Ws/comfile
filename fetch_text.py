@@ -12,7 +12,6 @@ base_url = "https://kelee.one/Tool/Loon/Lpx"
 # 自定义请求头
 headers = {
     "User-Agent": "Loon/917 CFNetwork/3826.600.41 Darwin/24.6.0",
-    "Accept": "*/*",
     "Accept-Encoding": "gzip, deflate, br",
     "Accept-Language": "zh-CN;q=0.9,zh-Hans;q=0.8",
 }
