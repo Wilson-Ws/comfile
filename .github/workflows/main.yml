@@ -3,27 +3,19 @@ name: Fetch Kelee Content
 
 on:
   # 每天 8 点触发一次
-  schedule:
-    - cron: '0 8 * * *'
+  #schedule:
+    #- cron: '0 8 * * *'
   workflow_dispatch: # 支持手动触发
 
 jobs:
   fetch-and-save:
     runs-on: ubuntu-latest
     steps:
-      # 1. 检出当前仓库代码
-      - name: Checkout repository
-        uses: actions/checkout@v3
-
-      # 2. 安装 curl（大多数环境已预装）
-      - name: Install curl
-        run: sudo apt-get update && sudo apt-get install -y curl
-
       # 3. 获取 kelee.one 的内容
       - name: Fetch content from kelee.one
         run: |
-          mkdir -p loon
-          curl -sSL -H "User-Agent: Loon/917 CFNetwork/3826.600.41 Darwin/24.6.0" https://kelee.one -o loon/kelee_content.html
+          mkdir -p Loon
+          curl -sSL -H "User-Agent: Loon/917 CFNetwork/3826.600.41 Darwin/24.6.0" https://kelee.one/Tool/Loon/Lpx/BlockAdvertisers.lpx -o Loon/BlockAdvertisers.lpx
 
       # 4. 提交并推送更新（如果有变化）
       - name: Commit and push changes
