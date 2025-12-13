@@ -40,7 +40,7 @@ jobs:
         git config --global user.email 'github-actions@github.com'
         
         # 遍历生成的文件并提交
-        for file in $(find . -type f -name "*.lpx"); do
+        for file in $(find Loon -type f -name "*.lpx"); do
           git add "$file"
           git commit -m "Update text content from kelee.one - $file"
         done
