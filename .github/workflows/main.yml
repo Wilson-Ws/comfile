@@ -14,13 +14,11 @@ jobs:
   fetch-and-save:
     runs-on: ubuntu-latest
     steps:
-      # 3. 获取 kelee.one 的内容
       - name: Fetch content from kelee.one
         run: |
           mkdir -p Loon
           curl -sSL -H "User-Agent: Loon/917 CFNetwork/3826.600.41 Darwin/24.6.0" https://kelee.one/Tool/Loon/Lpx/BlockAdvertisers.lpx -o Loon/BlockAdvertisers.lpx
 
-      # 4. 提交并推送更新（如果有变化）
       - name: Commit and push changes
         run: |
           git config user.name "github-actions[bot]"
@@ -28,7 +26,7 @@ jobs:
           if git diff --quiet; then
             echo "No changes to commit"
           else
-            git add loon/kelee_content.html
+            git add Loon/BlockAdvertisers.lpx
             git commit -m "Update kelee.one content"
             git push
           fi
