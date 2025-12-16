@@ -20,7 +20,7 @@ AND, ((DOMAIN-KEYWORD, lf), (DOMAIN-KEYWORD, -analytics.bytescm.com)), REJECT
 AND, ((DOMAIN-KEYWORD, lf), (DOMAIN-KEYWORD, -analytics.bytescm.com)), REJECT
 AND, ((DOMAIN-KEYWORD, log), (DOMAIN-KEYWORD, fqnovel.com)), REJECT
 AND, ((DOMAIN-KEYWORD, mon), (DOMAIN-KEYWORD, misc), (DOMAIN-SUFFIX, fqnovel.com)), REJECT
-AND, ((OR, ((DOMAIN-KEYWORD, log), (DOMAIN-KEYWORD, polaris), (DOMAIN-KEYWORD, ads), (DOMAIN-KEYWORD, game), (DOMAIN-KEYWORD, mon), (DOMAIN-KEYWORD, gecko), (DOMAIN-KEYWORD, misc))), (DOMAIN-SUFFIX, zijieapi.com)), REJECT
+AND, ((OR, ((DOMAIN-KEYWORD, log), (DOMAIN-KEYWORD, polaris), (DOMAIN-KEYWORD, ad), (DOMAIN-KEYWORD, game), (DOMAIN-KEYWORD, mon), (DOMAIN-KEYWORD, gecko), (DOMAIN-KEYWORD, misc), (DOMAIN-KEYWORD, mcs), (DOMAIN-KEYWORD, mssdk))), (DOMAIN-SUFFIX, zijieapi.com)), REJECT-VIDEO
 DOMAIN, effect.snssdk.com, REJECT
 DOMAIN, i.snssdk.com, REJECT
 DOMAIN, i-lq.snssdk.com, REJECT
