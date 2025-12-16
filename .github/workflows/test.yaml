@@ -99,10 +99,10 @@ jobs:
         working-directory: /workdir
         if: ${{ steps.init.outputs.status }} == 'success' && !cancelled()
         run: |
+          # Set up repo tag
           if [[ "${{ inputs.openwrt_branch }}" =~ ^- ]]; then
               REPO_TAG="${openwrt_branch_input##*-}"
-          elif then
-              REPO_TAG="${{ inputs.openwrt_branch }}"
+          elif REPO_TAG="${{ inputs.openwrt_branch }}"
           else
               exit 1
           fi
