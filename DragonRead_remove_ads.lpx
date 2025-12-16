@@ -19,8 +19,8 @@ AND, ((DOMAIN-KEYWORD, if), (DOMAIN-KEYWORD, -analytics.bytescm.com)), REJECT
 AND, ((DOMAIN-KEYWORD, lf), (DOMAIN-KEYWORD, -analytics.bytescm.com)), REJECT
 AND, ((DOMAIN-KEYWORD, lf), (DOMAIN-KEYWORD, -analytics.bytescm.com)), REJECT
 AND, ((DOMAIN-KEYWORD, log), (DOMAIN-KEYWORD, fqnovel.com)), REJECT
-AND, ((DOMAIN-KEYWORD, game), (DOMAIN-SUFFIX, zijieapi.com)), REJECT
 AND, ((DOMAIN-KEYWORD, mon), (DOMAIN-KEYWORD, misc), (DOMAIN-SUFFIX, fqnovel.com)), REJECT
+AND, ((OR, ((DOMAIN-KEYWORD, log), (DOMAIN-KEYWORD, polaris), (DOMAIN-KEYWORD, ads), (DOMAIN-KEYWORD, game), (DOMAIN-KEYWORD, mon), (DOMAIN-KEYWORD, gecko), (DOMAIN-KEYWORD, misc))), (DOMAIN-SUFFIX, zijieapi.com)), REJECT
 DOMAIN, effect.snssdk.com, REJECT
 DOMAIN, i.snssdk.com, REJECT
 DOMAIN, i-lq.snssdk.com, REJECT
@@ -42,16 +42,11 @@ DOMAIN, tosv.boe.byted.org, REJECT
 DOMAIN, tosv.byted.org, REJECT
 DOMAIN, mssdk-bu.bytedance.com, REJECT
 DOMAIN, mssdk.volces.com, REJECT
-DOMAIN, abtest3-misc.zijieapi.com,REJECT
 DOMAIN, feedback-c.zijieapi.com,REJECT
-DOMAIN, gecko3.zijieapi.com,REJECT
-DOMAIN, gecko5.zijieapi.com,REJECT
 DOMAIN, ma.zijieapi.com,REJECT
 DOMAIN, mssdk.zijieapi.com,REJECT
-DOMAIN, timon.zijieapi.com,REJECT
 DOMAIN, vcs.zijieapi.com,REJECT
 DOMAIN-KEYWORD, log.snssdk.com, REJECT
-DOMAIN-KEYWORD, mon.zijieapi.com, REJECT
 DOMAIN-KEYWORD, video-cn.snssdk.com, REJECT
 
 [Rewrite]
