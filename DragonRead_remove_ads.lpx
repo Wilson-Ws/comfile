@@ -31,8 +31,6 @@ DOMAIN, vas.snssdk.com, REJECT
 DOMAIN, zlink.ugsdk.cn, REJECT
 DOMAIN, mon.toutiaocloud.com, REJECT
 DOMAIN, mon.toutiaocloud.net, REJECT
-DOMAIN, lf-normal-gr-sourcecdn.bytegecko.com, REJECT
-DOMAIN, lf-webcast-gr-sourcecdn.bytegecko.com, REJECT
 DOMAIN, dm.bytedance.com, REJECT
 DOMAIN, dm.pstatp.com, REJECT
 DOMAIN, dm.toutiao.com, REJECT
