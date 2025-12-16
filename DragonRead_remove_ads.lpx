@@ -53,12 +53,6 @@ DOMAIN, vcs.zijieapi.com,REJECT
 DOMAIN-KEYWORD, log.snssdk.com, REJECT
 DOMAIN-KEYWORD, mon.zijieapi.com, REJECT
 DOMAIN-KEYWORD, video-cn.snssdk.com, REJECT
-IP-CIDR, 49.71.37.101/32, REJECT, no-resolve
-IP-CIDR, 117.71.105.23/32, REJECT, no-resolve
-IP-CIDR, 218.94.207.205/32, REJECT, no-resolve
-IP-CIDR, 117.92.229.188/32, REJECT, no-resolve
-IP-CIDR, 101.36.166.16/32, REJECT, no-resolve
-IP-CIDR, 180.96.2.114/32, REJECT, no-resolve
 
 [Rewrite]
 ^https?:\/\/gurd\.snssdk\.com\/src\/server\/v3\/package reject
