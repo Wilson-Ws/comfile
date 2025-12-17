@@ -1,0 +1,44 @@
+name: main
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  request-content:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+
+      - name: Load environment variables from .env
+        run: |
+          # 安装 dotenv 工具
+          sudo apt-get update && sudo apt-get install -y python3-dotenv
+          # 加载 .env 文件中的环境变量
+          python3 -c 'from dotenv import load_dotenv; load_dotenv()'
+
+      - name: Fetch content using curl
+        run: |
+          # 使用 curl 获取网页内容并保存到文件
+          curl -H "User-Agent: Loon/917 CFNetwork/3826.600.41 Darwin/24.6.0" \
+            "https://kelee.one/Tool/Loon/Lpx/${{ secrets.URL_PART }}.lpx" \
+            -o "response.txt"
+
+      - name: Create target directory
+        run: |
+          mkdir -p Loon/LPX
+
+      - name: Save content to file
+        run: |
+          mv response.txt "Loon/LPX/${{ secrets.FILENAME }}"
+
+      - name: Commit and push changes
+        run: |
+          git config --global user.name "GitHub Actions"
+          git config --global user.email "actions@github.com"
+          git add Loon/LPX/${{ secrets.FILENAME }}
+          git commit -m "Add content from ${{ secrets.URL_PART }}.lpx"
+          git push
