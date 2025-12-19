@@ -1,15 +1,14 @@
-# 引用链接: https://kelee.one/Tool/Loon/Lpx/DragonRead_remove_ads.lpx
 #!name=番茄小说去广告
-#!desc=移除番茄小说开屏广告、移除文章底部和章末广告、移除听书页面广告、移除悬浮部件和底栏多余的福利标签。
+#!desc=移除番茄小说开屏、底部和章末广告、移除听书页面广告，有推送和金币，用爱发电不可用。
 #!openUrl=https://apps.apple.com/app/id1468454200
-#!author=Wilson-Ws
+#!author=Wilson-Ws[https://github.com/Wilson-Ws]
 #!tag=去广告
 #!system=
 #!system_version=
 #!loon_version=3.2.4(787)
-#!homepage=
+#!homepage=https://github.com/Wilson-Ws
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/DragonRead.png
-#!date=2025-12-07 10:30:08
+#!date=2025-12-19
 
 [Rule]
 AND, ((DOMAIN-KEYWORD, -ttam-), (DOMAIN-SUFFIX, ibyteimg.com)), REJECT
@@ -17,8 +16,8 @@ AND, ((DOMAIN-KEYWORD, lf), (DOMAIN-KEYWORD, -short.bytetos.com)), REJECT
 AND, ((DOMAIN-KEYWORD, sf), (DOMAIN-KEYWORD, -ttcdn-tos.pstatp.com)), REJECT
 AND, ((DOMAIN-KEYWORD, if), (DOMAIN-KEYWORD, -analytics.bytescm.com)), REJECT
 AND, ((DOMAIN-KEYWORD, lf), (DOMAIN-KEYWORD, -analytics.bytescm.com)), REJECT
-AND, ((OR, ((DOMAIN-KEYWORD, log), (DOMAIN-KEYWORD, mon))), (DOMAIN-SUFFIX, fqnovel.com)), REJECT-VIDEO
-AND, ((OR, ((DOMAIN-KEYWORD, log), (DOMAIN-KEYWORD, polaris), (DOMAIN-KEYWORD, ad), (DOMAIN-KEYWORD, game), (DOMAIN-KEYWORD, mon), (DOMAIN-KEYWORD, gecko), (DOMAIN-KEYWORD, misc), (DOMAIN-KEYWORD, mcs), (DOMAIN-KEYWORD, mssdk))), (DOMAIN-SUFFIX, zijieapi.com)), REJECT-VIDEO
+AND, ((OR, ((DOMAIN-KEYWORD, log), (DOMAIN-KEYWORD, mon))), (DOMAIN-SUFFIX, fqnovel.com)), REJECT
+AND, ((OR, ((DOMAIN-KEYWORD, log), (DOMAIN-KEYWORD, polaris), (DOMAIN-KEYWORD, ad), (DOMAIN-KEYWORD, game), (DOMAIN-KEYWORD, mon), (DOMAIN-KEYWORD, gecko), (DOMAIN-KEYWORD, misc), (DOMAIN-KEYWORD, mcs), (DOMAIN-KEYWORD, mssdk))), (DOMAIN-SUFFIX, zijieapi.com)), REJECT
 DOMAIN, effect.snssdk.com, REJECT
 DOMAIN, i.snssdk.com, REJECT
 DOMAIN, i-lq.snssdk.com, REJECT
