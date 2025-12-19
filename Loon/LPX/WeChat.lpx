@@ -1,0 +1,21 @@
+#!name=微信去广告
+#!desc=过滤微信广告
+#!openUrl=https://apps.apple.com/app/id414478124
+#!author=Wilson-Ws[https://github.com/Wilson-Ws]
+#!tag=去广告
+#!system=
+#!system_version=
+#!loon_version=3.2.4(787)
+#!homepage=https://github.com/Wilson-Ws
+#!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/Weixin.png
+#!date=2025-12-19
+
+[Rule]
+#微信卡包图片
+DOMAIN-SUFFIX, wst.wxapp.tc.qq.com, REJECT-IMG
+DOMAIN-KEYWORD, dns.weixin.qq.com, REJECT
+
+[Rewrite]
+
+[MitM]
+hostname= wst.wxapp.tc.qq.com
