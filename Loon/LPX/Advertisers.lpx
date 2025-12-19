@@ -1,12 +1,12 @@
 #!name=广告平台拦截器
-#!desc=此插件是所有去广告插件的基础，只针对广告平台处理。
+#!desc=字节跳动补充
 #!openUrl=
-#!author=可莉🅥
-#!tag=去广告, 依赖
+#!author=Wilson-Ws[https://github.com/Wilson-Ws]
+#!tag=去广告
 #!system=
 #!system_version=
 #!loon_version=3.2.4(787)
-#!homepage=https://hub.kelee.one
+#!homepage=https://github.com/Wilson-Ws
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/Website_icon/120px/TencentAd.png
 #!date=2025-12-16
 
