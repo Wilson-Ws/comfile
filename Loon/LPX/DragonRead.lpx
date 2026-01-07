@@ -8,7 +8,7 @@
 #!loon_version=3.2.4(787)
 #!homepage=https://github.com/Wilson-Ws
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/DragonRead.png
-#!date=2025-12-19
+#!date=2026-01-07
 
 [Rule]
 AND, ((DOMAIN-KEYWORD, -ttam-), (DOMAIN-SUFFIX, ibyteimg.com)), REJECT
@@ -43,16 +43,3 @@ DOMAIN, mssdk.zijieapi.com,REJECT
 DOMAIN, vcs.zijieapi.com,REJECT
 DOMAIN-KEYWORD, log.snssdk.com, REJECT
 DOMAIN-KEYWORD, video-cn.snssdk.com, REJECT
-
-[Rewrite]
-^https?:\/\/gurd\.snssdk\.com\/src\/server\/v3\/package reject
-^https?:\/\/.+\.byteimg.com/tos-cn-i-1yzifmftcy\/(.+)-jpeg\.jpeg reject
-^https?:\/\/.+\.pstatp\.com\/obj\/mosaic-legacy\/.+\?from\=ad reject
-^https?:\/\/.+\.pstatp\.com\/bytecom\/resource\/track_log\/src\/.+ reject
-^https?:\/\/.+\.snssdk\.com\/video\/play\/1\/toutiao\/.+\/mp4 reject
-^https?:\/\/.+\.snssdk.com\/api\/ad\/.+ reject
-^https?:\/\/.+\.byteimg\.com\/ad-app-package reject
-^https?:\/\/.+\.byteimg\.com\/web\.business\.image reject
-
-[MitM]
-hostname = *.pstatp.com, *.pstatp.com.*, gurd.snssdk.com, gurd.snssdk.com.*
