@@ -1,0 +1,26 @@
+#!name=百度贴吧去广告
+#!desc=移除开屏广告、信息流广告和帖内广告，精简侧拉抽屉及我的页面。
+#!openUrl=https://apps.apple.com/app/id477927812
+#!author=app2smile[https://github.com/app2smile]
+#!tag=去广告
+#!system=
+#!system_version=15
+#!loon_version=3.2.4(787)
+#!homepage=https://github.com/Wilson-Ws
+#!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/Tieba.png
+#!date=2026-01-09
+
+[Argument]
+per_filter_video_thread = select,"0","1",tag=推荐页不展示视频贴,desc=设置为1则推荐页不展示视频贴
+
+[Rule]
+DOMAIN,180.76.76.200,REJECT
+# no-resolve需在最后
+IP-CIDR,180.76.76.200/32,REJECT,no-resolve
+
+[Mitm]
+hostname = tiebac.baidu.com
+
+[Script]
+http-response ^https?:\/\/(tiebac|c\.tieba)\.baidu\.com\/(c\/(s\/sync|f\/(ad\/getSplashAd|frs\/(page|threadlist|generalTabList)|pb\/(pic)?page|excellent\/personalized))$|tiebaads\/commonbatch\?) script-path=https://raw.githubusercontent.com/app2smile/rules/master/js/tieba-json.js, requires-body=true, timeout=10, tag=贴吧json
+http-response ^https?:\/\/(tiebac|c\.tieba)\.baidu\.com\/c\/(b\/ad\/adBid|f\/(frs\/(page|threadlist|generalTabList)|ad\/getFeedAd|pb\/page|excellent\/personalized))\?cmd script-path=https://raw.githubusercontent.com/app2smile/rules/master/js/tieba-proto.js, requires-body=true, binary-body-mode=true, timeout=10, tag=贴吧proto, argument=[{per_filter_video_thread}]
