@@ -14,8 +14,6 @@
 AND, ((OR, ((DOMAIN-KEYWORD, log), (DOMAIN-KEYWORD, mon))), (DOMAIN-SUFFIX, fqnovel.com)), REJECT
 AND, ((OR, ((DOMAIN-KEYWORD, log), (DOMAIN-KEYWORD, gecko), (DOMAIN-KEYWORD, ad), (DOMAIN-KEYWORD, game), (DOMAIN-KEYWORD, abtest))), (DOMAIN-SUFFIX, zijieapi.com)), REJECT
 DOMAIN, zlink.ugsdk.cn, REJECT
-DOMAIN, lf-normal-gr-sourcecdn.bytegecko.com, REJECT
-DOMAIN, lf-webcast-gr-sourcecdn.bytegecko.com, REJECT
 DOMAIN, p3-developer.bytemaimg.com, REJECT
 DOMAIN, webcast-open.douyin.com, REJECT
 DOMAIN, p11-webcast-sign.douyinpic.com, REJECT
