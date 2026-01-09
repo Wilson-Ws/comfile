@@ -8,38 +8,29 @@
 #!loon_version=3.2.4(787)
 #!homepage=https://github.com/Wilson-Ws
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/DragonRead.png
-#!date=2026-01-07
+#!date=2026-01-09
 
 [Rule]
-AND, ((DOMAIN-KEYWORD, -ttam-), (DOMAIN-SUFFIX, ibyteimg.com)), REJECT
-AND, ((DOMAIN-KEYWORD, lf), (DOMAIN-KEYWORD, -short.bytetos.com)), REJECT
-AND, ((DOMAIN-KEYWORD, sf), (DOMAIN-KEYWORD, -ttcdn-tos.pstatp.com)), REJECT
-AND, ((DOMAIN-KEYWORD, if), (DOMAIN-KEYWORD, -analytics.bytescm.com)), REJECT
-AND, ((DOMAIN-KEYWORD, lf), (DOMAIN-KEYWORD, -analytics.bytescm.com)), REJECT
 AND, ((OR, ((DOMAIN-KEYWORD, log), (DOMAIN-KEYWORD, mon))), (DOMAIN-SUFFIX, fqnovel.com)), REJECT
-AND, ((OR, ((DOMAIN-KEYWORD, log), (DOMAIN-KEYWORD, polaris), (DOMAIN-KEYWORD, ad), (DOMAIN-KEYWORD, game), (DOMAIN-KEYWORD, mon), (DOMAIN-KEYWORD, gecko), (DOMAIN-KEYWORD, misc), (DOMAIN-KEYWORD, mcs), (DOMAIN-KEYWORD, mssdk))), (DOMAIN-SUFFIX, zijieapi.com)), REJECT
+AND, ((OR, ((DOMAIN-KEYWORD, log), (DOMAIN-KEYWORD, gecko), (DOMAIN-KEYWORD, ad), (DOMAIN-KEYWORD, game), (DOMAIN-KEYWORD, abtest))), (DOMAIN-SUFFIX, zijieapi.com)), REJECT
+DOMAIN, zlink.ugsdk.cn, REJECT
+DOMAIN, lf-normal-gr-sourcecdn.bytegecko.com, REJECT
+DOMAIN, lf-webcast-gr-sourcecdn.bytegecko.com, REJECT
+DOMAIN, p3-developer.bytemaimg.com, REJECT
+DOMAIN, webcast-open.douyin.com, REJECT
+DOMAIN, p11-webcast-sign.douyinpic.com, REJECT
+DOMAIN, p3-webcast-sign.douyinpic.com, REJECT
 DOMAIN, effect.snssdk.com, REJECT
-DOMAIN, i.snssdk.com, REJECT
 DOMAIN, i-lq.snssdk.com, REJECT
 DOMAIN, is-lq.snssdk.com, REJECT
-DOMAIN, is.snssdk.com, REJECT
 DOMAIN, security.snssdk.com, REJECT
 DOMAIN, vas.snssdk.com, REJECT
-DOMAIN, zlink.ugsdk.cn, REJECT
 DOMAIN, mon.toutiaocloud.com, REJECT
 DOMAIN, mon.toutiaocloud.net, REJECT
-DOMAIN, dm.bytedance.com, REJECT
-DOMAIN, dm.pstatp.com, REJECT
-DOMAIN, dm.toutiao.com, REJECT
-DOMAIN, s3a.pstatp.com, REJECT
-DOMAIN, sdfp.snssdk.com, REJECT
-DOMAIN, tosv.boe.byted.org, REJECT
-DOMAIN, tosv.byted.org, REJECT
-DOMAIN, mssdk-bu.bytedance.com, REJECT
-DOMAIN, mssdk.volces.com, REJECT
-DOMAIN, feedback-c.zijieapi.com,REJECT
-DOMAIN, ma.zijieapi.com,REJECT
-DOMAIN, mssdk.zijieapi.com,REJECT
-DOMAIN, vcs.zijieapi.com,REJECT
+DOMAIN, feedback-c.zijieapi.com, REJECT
+DOMAIN, ma.zijieapi.com, REJECT
+DOMAIN, mssdk.zijieapi.com, REJECT
+DOMAIN, timon.zijieapi.com, REJECT
+DOMAIN, vcs.zijieapi.com, REJECT
+DOMAIN, vegslb.com, REJECT
 DOMAIN-KEYWORD, log.snssdk.com, REJECT
-DOMAIN-KEYWORD, video-cn.snssdk.com, REJECT
