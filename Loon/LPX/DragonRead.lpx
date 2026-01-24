@@ -15,3 +15,4 @@ AND, ((OR, ((DOMAIN-KEYWORD, log), (DOMAIN-KEYWORD, mon))), (DOMAIN-SUFFIX, fqno
 DOMAIN, mon.toutiaocloud.com, REJECT
 DOMAIN, mon.toutiaocloud.net, REJECT
 DOMAIN-KEYWORD, vegslb.com, REJECT
+DOMAIN-KEYWORD, siomxity.net, REJECT
