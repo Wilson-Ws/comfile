@@ -12,23 +12,6 @@
 
 [Rule]
 AND, ((OR, ((DOMAIN-KEYWORD, log), (DOMAIN-KEYWORD, mon))), (DOMAIN-SUFFIX, fqnovel.com)), REJECT
-#AND, ((OR, ((DOMAIN-KEYWORD, log), (DOMAIN-KEYWORD, gecko), (DOMAIN-KEYWORD, ad), (DOMAIN-KEYWORD, game))), (DOMAIN-SUFFIX, zijieapi.com)), REJECT
-#DOMAIN, zlink.ugsdk.cn, REJECT
-#DOMAIN, p3-developer.bytemaimg.com, REJECT
-#DOMAIN, webcast-open.douyin.com, REJECT
-#DOMAIN, p11-webcast-sign.douyinpic.com, REJECT
-#DOMAIN, p3-webcast-sign.douyinpic.com, REJECT
-#DOMAIN, effect.snssdk.com, REJECT
-#DOMAIN, i-lq.snssdk.com, REJECT
-#DOMAIN, is-lq.snssdk.com, REJECT
-#DOMAIN, security.snssdk.com, REJECT
-#DOMAIN, vas.snssdk.com, REJECT
 DOMAIN, mon.toutiaocloud.com, REJECT
 DOMAIN, mon.toutiaocloud.net, REJECT
-#DOMAIN, feedback-c.zijieapi.com, REJECT
-#DOMAIN, ma.zijieapi.com, REJECT
-#DOMAIN, mssdk.zijieapi.com, REJECT
-#DOMAIN, timon.zijieapi.com, REJECT
-#DOMAIN, vcs.zijieapi.com, REJECT
 DOMAIN-KEYWORD, vegslb.com, REJECT
-#DOMAIN-KEYWORD, log.snssdk.com, REJECT
