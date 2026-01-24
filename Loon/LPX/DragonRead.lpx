@@ -14,6 +14,7 @@
 AND, ((OR, ((DOMAIN-KEYWORD, log), (DOMAIN-KEYWORD, mon))), (DOMAIN-SUFFIX, fqnovel.com)), REJECT
 AND, ((OR, ((DOMAIN-KEYWORD, log), (DOMAIN-KEYWORD, gecko), (DOMAIN-KEYWORD, ad), (DOMAIN-KEYWORD, game))), (DOMAIN-SUFFIX, zijieapi.com)), REJECT
 AND, ((OR, ((DOMAIN-KEYWORD, cdn-tos), (DOMAIN-KEYWORD, sourcecdn))), (DOMAIN-KEYWORD, gecko.com)), DIRECT
+AND, ((DOMAIN-KEYWORD, log), (DOMAIN-SUFFIX, amemv.com)), REJECT
 DOMAIN, mon.toutiaocloud.com, REJECT
 DOMAIN, mon.toutiaocloud.net, REJECT
 DOMAIN-KEYWORD, gecko.com, REJECT
