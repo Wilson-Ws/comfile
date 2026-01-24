@@ -12,7 +12,7 @@
 
 [Rule]
 AND, ((OR, ((DOMAIN-KEYWORD, log), (DOMAIN-KEYWORD, mon))), (DOMAIN-SUFFIX, fqnovel.com)), REJECT
-AND, ((OR, ((DOMAIN-KEYWORD, log), (DOMAIN-KEYWORD, gecko), (DOMAIN-KEYWORD, ad), (DOMAIN-KEYWORD, game))), (DOMAIN-SUFFIX, zijieapi.com)), REJECT
+#AND, ((OR, ((DOMAIN-KEYWORD, log), (DOMAIN-KEYWORD, gecko), (DOMAIN-KEYWORD, ad), (DOMAIN-KEYWORD, game))), (DOMAIN-SUFFIX, zijieapi.com)), REJECT
 #DOMAIN, zlink.ugsdk.cn, REJECT
 #DOMAIN, p3-developer.bytemaimg.com, REJECT
 #DOMAIN, webcast-open.douyin.com, REJECT
@@ -31,4 +31,4 @@ DOMAIN, mon.toutiaocloud.net, REJECT
 #DOMAIN, timon.zijieapi.com, REJECT
 #DOMAIN, vcs.zijieapi.com, REJECT
 DOMAIN, vegslb.com, REJECT
-DOMAIN-KEYWORD, log.snssdk.com, REJECT
+#DOMAIN-KEYWORD, log.snssdk.com, REJECT
