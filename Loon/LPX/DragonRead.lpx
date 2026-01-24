@@ -12,7 +12,9 @@
 
 [Rule]
 AND, ((OR, ((DOMAIN-KEYWORD, log), (DOMAIN-KEYWORD, mon))), (DOMAIN-SUFFIX, fqnovel.com)), REJECT
+AND, ((OR, ((DOMAIN-KEYWORD, log), (DOMAIN-KEYWORD, gecko), (DOMAIN-KEYWORD, ad), (DOMAIN-KEYWORD, game))), (DOMAIN-SUFFIX, zijieapi.com)), REJECT
 DOMAIN, mon.toutiaocloud.com, REJECT
 DOMAIN, mon.toutiaocloud.net, REJECT
+DOMAIN-KEYWORD, gecko.com, REJECT
 DOMAIN-KEYWORD, vegslb.com, REJECT
 DOMAIN-KEYWORD, siomxity.net, REJECT
